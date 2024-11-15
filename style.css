@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+main {
+  width: 100%;
+
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  min-height: 400px;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.card .img {
+  width: 100%;
+  position: relative;
+  .main-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+.eye {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.card .img:hover .eye {
+  opacity: 1;
+  background-color: hsla(215, 52%, 70%, 0.61);
+  cursor: pointer;
+}
+h3 {
+  color: white;
+
+  transition: 0.3s ease;
+}
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+p,
+h5 {
+  color: hsl(215, 51%, 70%);
+}
+h4 {
+  color: hsl(178, 100%, 50%);
+}
+
+.further-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author,
+.price,
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card .span {
+  width: 98%;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.author img {
+  width: 25px;
+}
+p span {
+  background: transparent;
+  transition: 0.3s;
+  color: white;
+}
+p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
